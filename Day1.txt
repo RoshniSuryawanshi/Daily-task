@@ -1,0 +1,55 @@
+DAY 1
+
+1) Calculate the multiplication and sum of two numbers.
+
+# Accept input from the user for two numbers
+number1 = float(input("Enter the first number: "))
+number2 = float(input("Enter the second number: "))
+
+# Calculate the sum and multiplication of the two numbers
+sum_result = number1 + number2
+multiplication_result = number1 * number2
+
+# Display the results
+print(f"The sum of {number1} and {number2} is: {sum_result}")
+print(f"The multiplication of {number1} and {number2} is: {multiplication_result}")
+-------------------------------------------------------------------------------------------------------------------------------------------------
+2) Declare two variables ans print that which variable is largest using ternary operators.
+
+# Declare two variables
+number1 = float(input("Enter the first number: "))
+number2 = float(input("Enter the second number: "))
+
+# Use ternary operator to find and print the largest number
+largest = number1 if number1 > number2 else number2
+
+# Print the largest number
+print(f"The largest number is: {largest}")
+-------------------------------------------------------------------------------------------------------------------------------------------------3) Python program to convert the temperature in degree centigrade to Fahrenheit
+
+# Accept input from the user for temperature in Celsius
+celsius = float(input("Enter temperature in Celsius: "))
+
+# Convert Celsius to Fahrenheit
+fahrenheit = (9/5) * celsius + 32
+
+# Display the temperature in Fahrenheit
+print(f"The temperature in Fahrenheit is: {fahrenheit}°F")
+-------------------------------------------------------------------------------------------------------------------------------------------------4) Python program to fing=d the area of a triangle whose sides are given.
+
+import math
+
+# Accept input from the user for the three sides of the triangle
+a = float(input("Enter the length of the first side: "))
+b = float(input("Enter the length of the second side: "))
+c = float(input("Enter the length of the third side: "))
+
+# Calculate the semi-perimeter
+s = (a + b + c) / 2
+
+# Calculate the area using Heron's formula
+area = math.sqrt(s * (s - a) * (s - b) * (s - c))
+
+# Display the area of the triangle
+print(f"The area of the triangle is: {area:.2f} square units.")
+-------------------------------------------------------------------------------------------------------------------------------------------------

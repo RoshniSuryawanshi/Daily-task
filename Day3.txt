@@ -1,0 +1,51 @@
+Day-3
+
+1)Using input() function take one number from the user and using ternary operators check whether the number is even or odd
+
+# Take input from the user
+num = int(input("Enter a number: "))
+
+# Use ternary operator to check if the number is even or odd
+result = "Even" if num % 2 == 0 else "Odd"
+
+# Print the result
+print(f"The number is {result}.")
+----------------------------------------------------------------------------------------------------------------------------------------------
+
+2)Using input function take two number from the user and then swap the number
+
+# Take two numbers as input from the user
+num1 = int(input("Enter the first number: "))
+num2 = int(input("Enter the second number: "))
+
+# Swap the numbers using tuple unpacking
+num1, num2 = num2, num1
+
+# Print the swapped numbers
+print(f"After swapping, first number is: {num1}")
+print(f"After swapping, second number is: {num2}")
+-------------------------------------------------------------------------------------------------------------------------------------------------
+3) Write a program to Convert Kilometers to Miles.
+
+# Take input from the user for distance in kilometers
+kilometers = float(input("Enter distance in kilometers: "))
+
+# Conversion factor from kilometers to miles
+miles = kilometers * 0.621371
+
+# Display the result
+print(f"{kilometers} kilometers is equal to {miles} miles.")
+-------------------------------------------------------------------------------------------------------------------------------------------------
+4)Find the Simple Intrest on Rs.200 for 5years at 5% per year.
+
+# Take user input for principal, rate, and time
+P = float(input("Enter the principal amount (Rs.): "))
+R = float(input("Enter the rate of interest per year (%): "))
+T = float(input("Enter the time period in years: "))
+
+# Calculate Simple Interest
+SI = (P * R * T) / 100
+
+# Display the result
+print(f"The Simple Interest is Rs. {SI}")
+-------------------------------------------------------------------------------------------------------------------------------------------------

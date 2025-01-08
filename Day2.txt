@@ -1,0 +1,91 @@
+DAY 2
+
+1) Python program to click leap year.
+
+# Accept year input from the user
+year = int(input("Enter a year: "))
+
+# Check if the year is a leap year
+if (year % 4 == 0 and year % 100 != 0) or (year % 400 == 0):
+    print(f"{year} is a Leap Year.")
+else:
+    print(f"{year} is not a Leap Year.")
+-------------------------------------------------------------------------------------------------------------------------------------------------2)Python Program to Find the Largest Among Three Numbers.
+
+# Accept input from the user for three numbers
+number1 = float(input("Enter the first number: "))
+number2 = float(input("Enter the second number: "))
+number3 = float(input("Enter the third number: "))
+
+# Find the largest number using max() function
+largest = max(number1, number2, number3)
+
+# Display the largest number
+print(f"The largest number is: {largest}")
+-------------------------------------------------------------------------------------------------------------------------------------------------
+3)Python Program to Check if a Number is Positive,Negative or 0.
+
+# Accept input from the user
+number = float(input("Enter a number: "))
+
+# Check if the number is positive, negative, or zero
+if number > 0:
+    print("The number is Positive.")
+elif number < 0:
+    print("The number is Negative.")
+else:
+    print("The number is Zero.")
+-------------------------------------------------------------------------------------------------------------------------------------------------
+
+4) A toy vendor supplies three types of toys:Battery Based Toys,Key-based Toys, and Electrical Charging Based Toys. The vendor gives a discount of 10%on order for battery-based toys if the order is for more than Rs.1000. On order of more than Rs.100 for Key-based toys, a discount of 5% is given, and a discount of 10%is given on orders for electrical charging based toys of value more than Rs.500. Assume that the numeric codes 1,2and3 are used for battery based toys, key-based toys,and electrical charging based toys respectively. Write a program that reads the product code and the order amount and prints out the net amount that the customer is required to pay after the discount.
+
+
+# Accept input from the user
+product_code = int(input("Enter the product code (1 for Battery-based, 2 for Key-based, 3 for Electrical Charging-based): "))
+order_amount = float(input("Enter the order amount: "))
+
+# Initialize discount variable
+discount = 0
+
+# Apply discount based on the product code and order amount
+if product_code == 1:  # Battery-based toys
+    if order_amount > 1000:
+        discount = 0.10 * order_amount  # 10% discount
+elif product_code == 2:  # Key-based toys
+    if order_amount > 100:
+        discount = 0.05 * order_amount  # 5% discount
+elif product_code == 3:  # Electrical charging-based toys
+    if order_amount > 500:
+        discount = 0.10 * order_amount  # 10% discount
+else:
+    print("Invalid product code entered.")
+    exit()  # Exit if an invalid product code is entered
+
+# Calculate the net amount after applying the discount
+net_amount = order_amount - discount
+
+# Display the net amount to be paid
+print(f"The net amount to be paid after the discount is: Rs. {net_amount:.2f}")
+-------------------------------------------------------------------------------------------------------------------------------------------------
+
+5) A transport company charges the fare according to following table.
+
+# Accept input from the user for the distance traveled
+distance = float(input("Enter the distance traveled (in km): "))
+
+# Calculate fare based on the distance
+if distance <= 5:
+    fare = 10  # Fare for 1 to 5 km
+elif 6 <= distance <= 15:
+    fare = 15  # Fare for 6 to 15 km
+elif 16 <= distance <= 30:
+    fare = 20  # Fare for 16 to 30 km
+elif 31 <= distance <= 50:
+    fare = 25  # Fare for 31 to 50 km
+else:
+    fare = 30  # Fare for above 50 km
+
+# Display the fare
+print(f"The fare for {distance} km is Rs. {fare}.")
+-------------------------------------------------------------------------------------------------------------------------------------------------
+
