@@ -1,0 +1,90 @@
+1) 1. Declare a div() function with two parameters. Then call the function and pass two
+numbers and display their division.
+ 
+# Declare the div() function
+def div(a, b):
+    if b != 0:  # To prevent division by zero
+        result = a / b
+        return result
+    else:
+        return "Cannot divide by zero"
+
+# Take input from the user
+try:
+    num1 = float(input("Enter the first number: "))
+    num2 = float(input("Enter the second number: "))
+    
+    # Call the div function and display the result
+    result = div(num1, num2)
+    print(f"The result of division is: {result}")
+except ValueError:
+    print("Please enter valid numbers.")
+
+-------------------------------------------------------------------------------------------------------------------------------------------------2) Declare a square() function with one parameter.Then call the function and pass one
+number and display the square of that number .
+
+# Declare the square() function
+def square(x):
+    # Calculate the square of the number
+    result = x ** 2
+    return result
+
+# Call the function with one number
+num = 4
+
+# Display the square of the number
+result = square(num)
+print(f"The square of {num} is: {result}")
+ 
+-------------------------------------------------------------------------------------------------------------------------------------------------
+3) Using max() and min() functions display the maximum and minimum of 5 random
+numbers.
+
+# Take input from the user for 5 numbers
+try:
+    numbers = []
+    
+    for i in range(5):
+        num = float(input(f"Enter number {i+1}: "))
+        numbers.append(num)
+    
+    # Find the maximum and minimum using max() and min()
+    max_num = max(numbers)
+    min_num = min(numbers)
+    
+    # Display the results
+    print(f"The maximum number is: {max_num}")
+    print(f"The minimum number is: {min_num}")
+    
+except ValueError:
+    print("Please enter valid numbers.")
+
+-------------------------------------------------------------------------------------------------------------------------------------------------
+4) Accept a name from the user and display that in lower case using lower() function.
+
+# Accept the name from the user
+name = input("Please enter your name: ")
+
+# Display the name in lowercase using the lower() function
+print("Your name in lowercase is:", name.lower())
+ 
+-------------------------------------------------------------------------------------------------------------------------------------------------
+5) Write a lambda function that takes one argument and returns 'Positive' if the number is
+greater than 0, 'Negative' if it's less than 0, and 'Zero' if it's 0. Test it with different
+numbers.
+
+# Lambda function to check if a number is positive, negative, or zero
+check_number = lambda x: 'Positive' if x > 0 else 'Negative' if x < 0 else 'Zero'
+
+# Take input from the user
+try:
+    num = float(input("Enter a number: "))
+
+    # Call the lambda function and display the result
+    result = check_number(num)
+    print(f"The number is: {result}")
+    
+except ValueError:
+    print("Please enter a valid number.")
+
+-------------------------------------------------------------------------------------------------------------------------------------------------
